@@ -28,11 +28,24 @@
     header h1 {
       font-size: 42px;
       margin-bottom: 10px;
+      animation: fadeInUp 2s ease-in-out;
     }
 
     header p {
       font-size: 18px;
       color: #ccc;
+      animation: fadeInUp 2.5s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .btn-resume {
@@ -45,6 +58,7 @@
       border-radius: 5px;
       font-weight: 500;
       transition: background 0.3s ease;
+      animation: fadeInUp 3s ease-in-out;
     }
 
     .btn-resume:hover {
@@ -155,7 +169,7 @@
   <header>
     <h1>Hello, I'm Rishitha Madaraboina</h1>
     <p>Passionate IT student exploring development, innovation, and impactful tech solutions</p>
-    <a href="https://drive.google.com/drive/u/0/my-drive?usp=sharing" class="btn-resume" target="_blank">My Resume</a>
+    <a href="https://drive.google.com/file/d/1AbCdefGhIjKlMnOpQRsTuVWxyz/view?usp=sharing" class="btn-resume" target="_blank">My Resume</a>
   </header>
 
   <nav>
@@ -195,10 +209,9 @@
     <h2>Projects</h2>
     <div class="grid">
       <div class="box">
-  <h3>Smart Traffic Light System for Ambulance (IDP Project)</h3>
-  <p>An interdisciplinary project designed with IT and ETM students. The system detects ambulances in traffic using GPS, GSM, and Firebase integration, automatically turns the traffic signal green, sends SMS alerts, and updates a real-time dashboard with live ambulance location and traffic light status.</p>
-</div>
-
+        <h3>Smart Traffic Light System for Ambulance (IDP Project)</h3>
+        <p>An interdisciplinary project designed with IT and ETM students. The system detects ambulances in traffic using GPS, GSM, and Firebase integration, automatically turns the traffic signal green, sends SMS alerts, and updates a real-time dashboard with live ambulance location and traffic light status.</p>
+      </div>
       <div class="box">
         <h3>EduQuest</h3>
         <p>An innovative platform for students to learn programming through gamified and interactive experiences (Grades 8+).</p>
